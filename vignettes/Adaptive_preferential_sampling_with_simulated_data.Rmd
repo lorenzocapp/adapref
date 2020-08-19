@@ -24,10 +24,6 @@ We will first define a sampling rate and the effective population size functions
 Note: you need to have installed phylodyn, spmrf and rstan. 
 
 ```{r}
-source("adapref_INLA.R")
-source("adapref_STAN.R")
-source("utilities.R")
-source("utilities_from_other_packages.R")
 
 set.seed(123)
 n<-100
