@@ -16,14 +16,16 @@ Installation
 
 3.  Install `adapref` using
 
-    1.  `install_github("JuliaPalacios/phylodyn")`, or
+    1.  `install_github("lorenzocapp/adapref")`, or
 
-    2.  `install_github("JuliaPalacios/phylodyn", build_vignettes = TRUE)` if you want some illustrative vignettes (note: using `build_vignettes = TRUE` will make the install take longer).
+    2.  `install_github("lorenzocapp/adapref", build_vignettes = TRUE)` if you want some illustrative vignettes (note: using `build_vignettes = TRUE` will make the install take longer).
 
 Vignettes
 ---------
 
-1.  [SimpleBNPR](https://github.com/mdkarcher/phylodyn/blob/master/vignettes/SimpleBNPR.Rmd): A short example showing how to use BNPR and BNPR-PS on simulated data, illustraring methodology in \[2\] and \[5\].
+1.  [Adaptive preferential sampling with simulated data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/Adaptive_preferential_sampling_with_simulated_data.Rmd): A short tutorial to describe the basics functioning of the package.
 
 References
 ----------
+
+1.  L. Cappello, J.A. Palacios, Adaptive Preferential Sampling in Phylodynamics, soon in arxiv! 2020
