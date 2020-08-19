@@ -23,7 +23,7 @@ Installation
 Vignettes
 ---------
 
-1.  [Adaptive preferential sampling with simulated data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/Adaptive_preferential_sampling_with_simulated_data.Rmd): A short tutorial to describe the basics functioning of the package.
+1.  [Adaptive preferential sampling with simulated data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/Adaptive_prefsamp.Rmd): A short tutorial to describe the basics functioning of the package.
 
 References
 ----------
