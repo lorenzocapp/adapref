@@ -47,7 +47,7 @@ We now sample the sampling times, coalescent times, and a corresponding genealog
 Note that in the samp_times vector, we artificially make the first sampling time zero.
 n_sampled is going to be a vector of 1, because the Poisson process samples one event a time
 
-We the nplot the simulated genealogy. 
+We then plot the simulated genealogy. 
 ```{r}
 samp_times<-c(0,sampsim_thin(max.n=n-1,traj=sampling_traj,xlim=c(0,3))[-n+1])
 n_sampled <- rep(1,n) # simulation like this it will be like this.
@@ -58,8 +58,8 @@ plot(treeP)
 
 ```
 
-We now defines the various representation of the data that are needed for the estimation.
-We also define the grid constituted by ngr points. 
+We now define the various representations of the data that are needed for the estimation.
+We also define the grid formed by ngr points. 
 ```{r}
 phyy<-phylodyn::summarize_phylo(treeP)
 coaldat<-list(coal_times=phyy$coal_times,intercoal_times=c(phyy$coal_times[1],diff(phyy$coal_times)),samp_times=phyy$samp_times,n_sampled=phyy$n_sampled)
@@ -69,8 +69,8 @@ cdat<-samp_and_coalescent_data(samp_times=phyy$samp_times,n_sampled = phyy$n_sam
 
 ```
 
-We can either to INLA or HMC posterior approximation.
-First we show how to do INLA: the first line use the built in procedure to choose precisions hyperparameters of the fields; second line, it is the actually posterior approximation
+We can either do INLA or HMC posterior approximation.
+First we show how to do it with INLA: the first line uses the built in procedure to choose precision hyperparameters of the fields; second line, it is the actual posterior approximation
 
 
 ```{r}
@@ -88,7 +88,7 @@ plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim
 
 ```
 
-Now, we show how to use HMC: first we define the parameters needed (par.G.H to keep, MCMC relevant quantities); then we use the in built procedure to determine the precision parameter of the field; we do the estimation (adapref_sampling). In this case we are fitting a GMRF-1 on both parameters. Lastly, we extract the output. 
+Now, we show how to use HMC: first we define the parameters needed (par.G.H to keep, MCMC relevant quantities); then we use the built-in procedure to determine the precision parameter of the field; we then do the estimation (adapref_sampling). In this case we are fitting a GMRF-1 on both parameters. Lastly, we extract the output. 
 
 
 ```{r}
