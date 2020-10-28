@@ -28,4 +28,4 @@ Vignettes
 References
 ----------
 
-1.  L. Cappello, J.A. Palacios, Adaptive Preferential Sampling in Phylodynamics, soon in arxiv! 2020
+1.  L. Cappello, J.A. Palacios, [Adaptive Preferential Sampling in Phylodynamics](https://arxiv.org/pdf/2009.02307.pdf), Arxiv, 2020.
