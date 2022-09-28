@@ -1,16 +1,29 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-adapref
-=======
+
+# adapref
 
 <!-- badges: start -->
 <!-- badges: end -->
-The goal of adapref is to allow adaptive preferential sampling in phylodynamics. It is a package to be used jointly with phylodyn and spmrf. Many of the functions of this package have been developed starting from the work done in these two packages. We acknowledge the developers for their work.
 
-Installation
-------------
+adapref has two main uses:
 
-1.  Install (if necessary) package dependencies and helpers: `devtools`, `ape`, `spmrf`, `rstan`, `loo` and `phylodyn`.
+-   Estimation of the effective population size of a single population
+    when there is preferential sampling \[1\]
+
+-   Estimation of the effective population sizes of two populations
+    coevolving \[2\]. One is free to include or not preferential
+    sampling in this second scenario
+
+It is a package to be used jointly with phylodyn and spmrf. Many of the
+functions of this package have been developed starting from the work
+done in these two packages. We acknowledge the developers for their
+work.
+
+## Installation
+
+1.  Install (if necessary) package dependencies and helpers: `devtools`,
+    `ape`, `spmrf`, `rstan`, `loo` and `phylodyn`.
 
 2.  Load `devtools` using `library(devtools)`.
 
@@ -18,14 +31,28 @@ Installation
 
     1.  `install_github("lorenzocapp/adapref")`, or
 
-    2.  `install_github("lorenzocapp/adapref", build_vignettes = TRUE)` if you want some illustrative vignettes (note: using `build_vignettes = TRUE` will make the install take longer).
+    2.  `install_github("lorenzocapp/adapref", build_vignettes = TRUE)`
+        if you want some illustrative vignettes (note: using
+        `build_vignettes = TRUE` will make the install take longer).
 
-Vignettes
----------
+## Vignettes
 
-1.  [Adaptive preferential sampling with simulated data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/Adaptive_prefsamp.Rmd): A short tutorial to describe the basics functioning of the package.
+1.  [Adaptive preferential sampling with simulated
+    data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/adapref_intro.Rmd):
+    A short tutorial to describe the basics of the first method \[1\]
 
-References
-----------
+2.  
 
-1.  L. Cappello, J.A. Palacios, [Adaptive Preferential Sampling in Phylodynamics](https://arxiv.org/pdf/2009.02307.pdf), Arxiv, 2020.
+## References
+
+\[1\] Cappello, L., Palacios, J.A. (2022) Adaptive Preferential Sampling
+in Phylodynamics, *Journal of Computational and Graphical Statistics*,
+31, 541-552.
+[Link](https://www.tandfonline.com/doi/full/10.1080/10618600.2021.1987256)
+
+\[2\] Cappello, L.\*\*\*, Kim, J.\* , Palacios, J. A., (2022+)
+\`\`Bayesian Inference of Dependent Population Dynamics in Coalescent
+Models.” [
+*b**i**o**r**X**i**v*
+](https://www.biorxiv.org/content/10.1101/2022.05.22.492976v1). \* first
+authors

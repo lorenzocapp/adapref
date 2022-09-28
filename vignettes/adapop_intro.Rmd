@@ -2,7 +2,7 @@
 title: "adapref_intro"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{adapref_intro}
+  %\VignetteIndexEntry{adapop_intro}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
