@@ -39,9 +39,13 @@ work.
 
 1.  [Adaptive preferential sampling with simulated
     data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/adapref_intro.Rmd):
-    A short tutorial to describe the basics of the first method \[1\]
+    A short tutorial to describe the basics of the method described in
+    \[1\]
 
-2.  
+2.  [Adapop: multiple populations coalescent
+    modelling](https://github.com/lorenzocapp/adapref/blob/master/vignettes/adapop_intro.Rmd):
+    A short tutorial to describe the basics of the method described in
+    \[2\]
 
 ## References
 
