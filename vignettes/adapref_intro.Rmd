@@ -80,9 +80,9 @@ res<-BNPR_PS_ada(coaldat,lengthout=100,zeta1=zeta$zeta1,zeta2=zeta$zeta2)
 
 Now, we plot the posterior of N_e(t) and beta(t)
 ```{r}
- phylodyn::plot_BNPR(res,heatmaps=TRUE,heatmap_labels = FALSE,ylab="",xlab = "",main="effective pop size")
+phylodyn::plot_BNPR(res,heatmaps=TRUE,heatmap_labels = FALSE,ylab="",xlab = "",main="effective pop size")
 
-plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim=c(1,0))
+plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim=c(0.5,0))
 
 ```
 
@@ -105,7 +105,7 @@ zeta<-set_prec_parameters(phylo = coaldat, ncell = ngr, alpha = 0.05, order.c = 
 
 fit<-adapref_sampling(prior.c="normal", prior.s="normal", order.c=1, order.s=1, zeta.c=zeta$zeta1,zeta.s=zeta$zeta2,
                        data=cdat, par=pars.G.H, chains=nchain, warmup=nburn, thin=nthin, iter=niter, control=list(adapt_delta=0.98, max_treedepth=12),save.loglik = T)              
-res<-extract_out(fit,grid=sgrid$grid,midpts=sgrid$midpts,samp_times=phyy$samp_times,coal_times=coaldat$coal_times,n_sampled = rep(1,n), alpha=0.05)
+res<-extract_out(fit,grid=sgrid$grid,midpts=sgrid$midpts,samp_times=phyy$samp_times,coal_times=coaldat$coal_times,n_sampled = c(2,rep(1,n-2)), alpha=0.05)
 
 
 ```
@@ -114,7 +114,7 @@ Again, we plot the posterior of N_e(t) and beta(t)
 ```{r}
  phylodyn::plot_BNPR(res,heatmaps=TRUE,heatmap_labels = FALSE,ylab="",xlab = "",main="effective pop size")
 
-plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim=c(1,0))
+plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim=c(0.5,0))
 
 ```
 
