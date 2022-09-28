@@ -22,7 +22,13 @@ extract_spmrf(
 
 \item{midpts}{grid mid points}
 
+\item{samp_times}{vector of sampling times}
+
+\item{coal_times}{vector of coalescent times}
+
 \item{alpha}{which BCI to keep}
+
+\item{n_samples}{vector of number of samples per sampling time}
 }
 \value{
 BNPR style output

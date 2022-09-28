@@ -44,6 +44,12 @@ sampled per sampling time \code{n_sampled}.}
 
 \item{parSel}{Default is FALSE. If TRUE uses the parametric model, if FALSE, the adaptive one.}
 
+\item{u.truncation}{It determines the upper bound the grid of the GMRF. Default is the minimum TMRCA between the two populations.}
+
+\item{l.truncation}{It determines the lower bound the grid of the GMRF. Default is 0}
+
+\item{beta0_remove}{It removes the intercept in the parameteric model if TRUE. Default is FALSE}
+
 \item{simplify}{logical whether to fully bucket all Poisson points.}
 
 \item{derivative}{logical whether to calculate estimates of the

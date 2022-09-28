@@ -389,7 +389,7 @@ skyLine_and_samp_int <- function(phy){
 #'   times \code{coal_times}, sampling times \code{samp_times}, and number
 #'   sampled per sampling time \code{n_sampled}.
 #' @param ncell number of grid points.
-#' @param upBound
+#' @param upBound upper bound
 #' @param alpha quantile to consider
 #' @param order.c order field on effective population size
 #' @param order.s order field on beta
@@ -427,9 +427,9 @@ set_prec_parameters <- function(phylo, ncell, upBound=NULL, alpha=0.05, order.c=
 #' @param mfit stan fit object (output of adapref_sampling)
 #' @param grid grid boundaries
 #' @param midpts grid mid points
-#' @param samp_times
-#' @param coal_times
-#' @param n_samples
+#' @param samp_times vector of sampling times
+#' @param coal_times vector of coalescent times
+#' @param n_samples vector of number of sampler per sampling time
 #' @param alpha which BCI to keep
 #'
 #' @return BNPR style output
@@ -478,9 +478,9 @@ extract_out <- function(mfit,grid,midpts,samp_times,coal_times,n_sampled, alpha=
 #' @param mfit stan fit object (output of adapref_sampling)
 #' @param grid grid boundaries
 #' @param midpts grid mid points
-#' @param samp_times
-#' @param coal_times
-#' @param n_samples
+#' @param samp_times vector of sampling times
+#' @param coal_times vector of coalescent times
+#' @param n_samples vector of number of samples per sampling time
 #' @param alpha which BCI to keep
 #'
 #' @return BNPR style output

@@ -14,9 +14,9 @@
 #' @param beta1_prec hyperparameter GMRF on beta (pref sampling)
 #' @param parSel Default is FALSE. If TRUE uses the parametric model, if FALSE, the adaptive one.
 #' @param preferential. Default is FALSE. If TRUE includes also preferential sampling, if FALSE, preferential sampling is not included
-#' @u.truncation It determines the upper bound the grid of the GMRF. Default is the minimum TMRCA between the two populations.
-#' @l.truncation It determines the lower bound the grid of the GMRF. Default is 0
-#' @beta0_remove It removes the intercept in the parameteric model if TRUE. Default is FALSE
+#' @param u.truncation It determines the upper bound the grid of the GMRF. Default is the minimum TMRCA between the two populations.
+#' @param l.truncation It determines the lower bound the grid of the GMRF. Default is 0
+#' @param beta0_remove It removes the intercept in the parameteric model if TRUE. Default is FALSE
 #' @param simplify logical whether to fully bucket all Poisson points.
 #' @param derivative logical whether to calculate estimates of the
 #'   log-derivative.

@@ -1695,10 +1695,10 @@ get_init_ada <- function(prior.c="normal", prior.s="horseshoe", order.c=1,order.
 
 #' Prepare the format neeed for HMC
 #'
-#' @param samp_times
-#' @param n_sampled
-#' @param coal_times
-#' @param grid
+#' @param samp_times vector of sampling times
+#' @param n_sampled vector of number of samples per sampling time
+#' @param coal_times vector of coalescent time
+#' @param grid grid points
 #'
 #' @return all the information needed into the adapref_sampling function
 #' @export

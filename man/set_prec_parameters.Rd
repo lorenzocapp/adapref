@@ -20,6 +20,8 @@ sampled per sampling time \code{n_sampled}.}
 
 \item{ncell}{number of grid points.}
 
+\item{upBound}{upper bound}
+
 \item{alpha}{quantile to consider}
 
 \item{order.c}{order field on effective population size}

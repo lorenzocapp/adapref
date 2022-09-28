@@ -7,7 +7,13 @@
 samp_and_coalescent_data(samp_times, n_sampled, coal_times, grid)
 }
 \arguments{
-\item{grid}{}
+\item{samp_times}{vector of sampling times}
+
+\item{n_sampled}{vector of number of samples per sampling time}
+
+\item{coal_times}{vector of coalescent time}
+
+\item{grid}{grid points}
 }
 \value{
 all the information needed into the adapref_sampling function
