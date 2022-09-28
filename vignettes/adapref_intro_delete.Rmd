@@ -1,18 +1,21 @@
 ---
-title: "adapref_intro"
+title: "Adaptive preferential sampling vignette"
+author: "Lorenzo Cappello"
+date: "28/09/2022"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{adapref_intro}
+  %\VignetteIndexEntry{Adaptive preferential sampling vignette}
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  \usepackage[utf8]{inputenc}
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
 
 ```{r setup}
 library(adapref)
@@ -117,6 +120,5 @@ Again, we plot the posterior of N_e(t) and beta(t)
 plot_beta(res,heatmaps=TRUE,heatmap_labels=FALSE,main="beta",ylim=c(10,100),xlim=c(1,0))
 
 ```
-
 
 
