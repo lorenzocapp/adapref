@@ -138,11 +138,10 @@ infer_coal_samp_ada <- function(samp_times, coal_times, n_sampled=NULL,
 
 
 
-  lc_many <- NULL
 
 
   mod <- INLA::inla(formula, family = family, data = data,
-                    lincomb = lc_many, offset = data$E_log,
+                    offset = data$E_log,
                     control.predictor = list(compute=TRUE))
                    # ,control.inla = list(lincomb.derived.only=FALSE)
                    #)

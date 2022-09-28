@@ -264,9 +264,8 @@ infer_coal_samp_pop <- function(phy1,phy2, lengthout=100, prec_alpha=0.01, prec_
     family <- c("poisson", "poisson","poisson","poisson")
   }
 
-  lc_many <- NULL
   mod <- INLA::inla(formula, family = family, data = data,
-                    lincomb = lc_many, offset = data$E_log,
+                    offset = data$E_log,
                     #control.predictor = list(compute=TRUE),
                     control.compute = list(config=TRUE))
                     #control.inla = list(lincomb.derived.only=FALSE)
