@@ -2,15 +2,6 @@
 
 
 
-BNPR_PS_ada<-function (data, lengthout = 100, zeta1 = 0.01, zeta2 = 0.01, simplify = TRUE,
-                       derivative = FALSE, forward = TRUE)
-{
-  return(BNPR_ada(data = data, lengthout = lengthout, pref = TRUE,
-                  zeta1 = zeta1, zeta2 = zeta2,  simplify = simplify, derivative = derivative,
-                  forward = forward))
-}
-
-
 #' Adaptive preferential sampling method_INLA approximation
 #'
 #' @param data \code{phylo} object or list containing vectors of coalescent
@@ -135,8 +126,6 @@ infer_coal_samp_ada <- function(samp_times, coal_times, n_sampled=NULL,
 
 
   family <- c("poisson", "poisson")
-
-
 
 
 
