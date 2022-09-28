@@ -198,7 +198,7 @@ plot_BNPR_plus <-function (BNPR_out, parameter="eff1", traj = NULL, xlim = NULL,
     ylo = BNPR_out$effpop025[mask] * yscale
   } else if (parameter=="eff2"){
     preferential = BNPR_out$preferential
-    result <- eff2_adasel(BNPR_out,preferential=preferential)
+    result <- eff2_adapop(BNPR_out,preferential=preferential)
     mask = result$effpop2summary$time >= min(xlim) & result$effpop2summary$time <= max(xlim)
     t = result$effpop2summary$time[mask]
     y = result$effpop2[mask] * yscale

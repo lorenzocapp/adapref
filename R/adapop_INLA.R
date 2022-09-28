@@ -63,10 +63,10 @@ BNPR_pop <- function (tree1,tree2, samp_times1,samp_times2, lengthout = 100,
   }
 
   #If parSel is FALSE, I am using adaSel
-  phy1 <- summarize_phylo(tree1)
+  phy1 <- phylodyn::summarize_phylo(tree1)
   phy1$samp_times <- phy1$samp_times + min(samp_times1)
   phy1$coal_times <- phy1$coal_times + min(samp_times1)
-  phy2 <- summarize_phylo(tree2)
+  phy2 <- phylodyn::summarize_phylo(tree2)
   phy2$samp_times <- phy2$samp_times + min(samp_times2)
   phy2$coal_times <- phy2$coal_times + min(samp_times2)
 
@@ -528,5 +528,7 @@ eff2_parametric <- function(res){
 
   return(result)
 }
+
+
 
 

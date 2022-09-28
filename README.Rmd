@@ -18,7 +18,13 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of adapref is to allow adaptive preferential sampling in phylodynamics. It is a package to be used jointly with phylodyn and spmrf. Many of the functions of this package have been developed starting from the work done in these two packages. We acknowledge the developers for their work. 
+adapref has two main uses: 
+
+- Estimation of the effective population size of a single population when there is preferential sampling [1]
+
+- Estimation of the effective population sizes of two populations coevolving [2]. One is free to include or not preferential sampling in this second scenario
+
+It is a package to be used jointly with phylodyn and spmrf. Many of the functions of this package have been developed starting from the work done in these two packages. We acknowledge the developers for their work. 
 
 ## Installation
 
@@ -28,13 +34,18 @@ The goal of adapref is to allow adaptive preferential sampling in phylodynamics.
 
 3. Install `adapref` using
 
-    a. `install_github("JuliaPalacios/phylodyn")`, or
+    a. `install_github("lorenzocapp/adapref")`, or
 
-    b. `install_github("JuliaPalacios/phylodyn", build_vignettes = TRUE)` if you want some illustrative vignettes (note: using `build_vignettes = TRUE` will make the install take longer).
+    b. `install_github("lorenzocapp/adapref", build_vignettes = TRUE)` if you want some illustrative vignettes (note: using `build_vignettes = TRUE` will make the install take longer).
 
 ## Vignettes
 
-1. [SimpleBNPR](https://github.com/mdkarcher/phylodyn/blob/master/vignettes/SimpleBNPR.Rmd): A short example showing how to use BNPR and BNPR-PS on simulated data, illustraring methodology in [2] and [5].
+1. [Adaptive preferential sampling with simulated data](https://github.com/lorenzocapp/adapref/blob/master/vignettes/adapref_intro.Rmd): A short tutorial to describe the basics of the first method [1]
 
+2. 
 
 ## References
+
+[1] Cappello, L., Palacios, J.A. (2022) Adaptive Preferential Sampling in Phylodynamics, *Journal of Computational and Graphical Statistics*, 31, 541-552. [Link](https://www.tandfonline.com/doi/full/10.1080/10618600.2021.1987256)
+
+[2] Cappello, L.**\*,  Kim, J.\* , Palacios, J. A., (2022+) ``Bayesian Inference of Dependent Population Dynamics in Coalescent Models." [\[biorXiv\]](https://www.biorxiv.org/content/10.1101/2022.05.22.492976v1). \* first authors
