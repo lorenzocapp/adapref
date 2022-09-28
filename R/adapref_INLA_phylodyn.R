@@ -112,8 +112,8 @@ infer_coal_samp_ada <- function(samp_times, coal_times, n_sampled=NULL,
   #practically above we are compunting for all sampling time, coalescent event and grid point the corresponding
 
   if (simplify)
-    coal_data <- with(coal_data, condense_stats_ada(time=time, event=event, E=E))
-
+    coal_data <- with(coal_data, condense_stats_ada(time=time, event=event, E=E)) #not sure what's happening here
+  #not sure what's above
 
   hyper <- list(prec = list(param = c(zeta1,  zeta2)))
 
@@ -264,5 +264,18 @@ joint_stats_ada <- function(coal_data, samp_data)
 }
 
 
+
+#Function taken from spmrf
+
+
+varRef <- function(nn, kap, omg2, order=1){
+  #nn is number of thetas, kap = 1/gam^2 (precision), omg2=omega^2 (variance of theta1)
+  #returns vector of marginal variances
+  nnv <- 1:nn
+  if (order==1) out <- omg2 + (nnv-1)*(1/kap)
+  if (order==2) out <- omg2 + (1/kap)*nnv*(nnv-1)*(2*nnv-1)/6
+  if (order >= 3) out <- NULL
+  return(out)
+}
 
 

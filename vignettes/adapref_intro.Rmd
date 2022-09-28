@@ -1,20 +1,21 @@
 ---
-title: "Adaptive_preferential_sampling_with_simulated_data"
+title: "Adaptive preferential sampling vignette"
 author: "Lorenzo Cappello"
-date: "August 18, 2020"
+date: "28/09/2022"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Adaptive_preferential_sampling_with_simulated_data}
+  %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
 
 ```{r setup}
 library(adapref)
